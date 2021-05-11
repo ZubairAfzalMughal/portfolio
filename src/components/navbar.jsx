@@ -6,7 +6,7 @@ function NavBar() {
             <nav className="navbar navbar-expand-lg navbar-light bg-dark">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="">
-                       <img src={logo} alt="logo" className="logo"/>
+                       <img src={logo} alt="logo" />
                     </a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span>
