@@ -1,0 +1,16 @@
+/* ----------------------Navbar links---------------------------- */
+
+nav a.nav-link{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.navbar-nav > li > a{
+    color: #fff !important;
+}
+/* ------------logo--------------- */
+
+img{
+    width: 5.5rem;
+
+}
