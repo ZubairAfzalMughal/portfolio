@@ -1,16 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+/* ------------------css variable----------------------------- */
+
+:root{
+    --primary-color:#fff;
+    --primary-green:green;
+    --primary-dark : rgb(255,255,255,0);
+}
+
+/* ----------------body---------------- */
+body{
+    font-family: 'Montserrat';
+}
 /* ----------------------Navbar links---------------------------- */
 
 nav a.nav-link{
     text-transform: uppercase;
     cursor: pointer;
+    letter-spacing: 0.035em;
 }
 
 .navbar-nav > li > a{
-    color: #fff !important;
+    color:var(--primary-color) !important;
+    font-weight: bold;
+    border-top: 3px solid var(--primary-dark);
 }
 /* ------------logo--------------- */
 
 img{
-    width: 5.5rem;
-
+    width: 4.5rem;
+}
+.navbar-nav > li > a:focus{
+    border-bottom: 3px solid var(--primary-green);
+}
+.navbar-nav > li > a.active, .navbar-nav > li > a:hover{
+    border-bottom: 3px solid var(--primary-green);
+}
+.navbar-toggler .navbar-toggler-icon{
+    border-color: #fff !important;
+}
+/* --------humburger icon color-------------- */
+.fas{
+    color: var(--primary-color);
 }
