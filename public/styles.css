@@ -1,16 +1,197 @@
-/* ----------------------Navbar links---------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/* ------------------css variable----------------------------- */
+
+:root{
+    --primary-color:#fff;
+    --primary-green:green;
+    --primary-dark : rgb(255,255,255,0);
+}
+
+/* ----------------body---------------- */
+body{
+    font-family: 'Montserrat';
+}
+/* ----------------------Navbar links---------------------------- */
+nav{
+    z-index: 2;
+}
 nav a.nav-link{
     text-transform: uppercase;
     cursor: pointer;
+    letter-spacing: 0.035em;
 }
 
 .navbar-nav > li > a{
-    color: #fff !important;
+    color:var(--primary-color) !important;
+    font-weight: bold;
+    border-top: 3px solid var(--primary-dark);
+    border-bottom: 3px solid var(--primary-dark);
 }
 /* ------------logo--------------- */
 
 img{
-    width: 5.5rem;
+    width: 4.5rem;
+}
+.navbar-nav > li > a:focus{
+    border-bottom: 3px solid var(--primary-green);
+}
+.navbar-nav > li > a.active, .navbar-nav > li > a:hover{
+    border-bottom: 3px solid var(--primary-green);
+}
+.navbar-toggler .navbar-toggler-icon{
+    border-color: #fff !important;
+}
+.navbar-brand h3{
+    font-weight: bolder;
+}
+/* --------humburger icon color-------------- */
+.fas{
+    color: var(--primary-color);
+}
+/* --------------Header---------------------- */
 
+.header-out{
+    position: relative;
+    background: url('header.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+.header-in{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.header-in h1{
+    color: #fff;
+    border-bottom: 3px solid var(--primary-green);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 5px;
+}
+.header-in h2{
+    font-size: large;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 5px;
+}
+.fg{
+    color: var(--primary-green)
+
+}
+/* --------------------------Particles----------------------------------------- */
+.tsparticles-canvas-el{
+    height: 100vh;
+
+    position:absolute;
+    width: 100vw;
+    z-index: 1;
+}
+/* --------------------------Services---------------------------------------- */
+.row h3{
+    font-size: large;
+    font-weight: bold;
+}
+.fg:hover{
+
+    color:#32CD32
+}
+.s-card:hover{
+    transform: translateY(10deg);
+}
+.container h1{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 900;
+}
+/* -----------------------------About Us-------------------------------------- */
+.about-us h1{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 900;
+}
+.carousel-item img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+} 
+.carousel-indicators li {
+
+    border: 2px solid var(--primary-green);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+  }
+/* ---------------------------Contact Us---------------------------------- */
+.contact h1{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 900;
+}
+.contact-d{
+    background-color: var(--primary-green);
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: #fff;
+}
+.form-control{
+    border: 1px solid var(--primary-green);
+}
+.form-control:active{
+  border: 1px solid #32CD32;
+}
+/*------------------------------ Footers----------------------------- */
+.main-footer{
+      height: 15vh;
+}
+.social{
+    color: #fff;
+    display: flex;
+    place-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+.social a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-b p{
+    color: var(--primary-color);
+}
+/*----------------------------- Reponsivness------------------------- */
+
+
+@media (max-width:400px) {
+    .fg{
+        color: var(--primary-green);
+    }
+    .container h1{
+        font-size: 1.5rem;
+    }
+    .carousel-item img{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40vh;
+    } 
+
+}
+@media (max-width:700px) {
+    .particles{
+        display: none;
+    }
+    
+    
 }
